@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
+import JobForm from './components/JobForm';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+   <header className="app-header d-flex justify-content-between align-items-center p-3">
+  <div className="d-flex align-items-center">
+    <img
+      src="/logo.png"
+      alt="Logo"
+      className="logo"
+      style={{ width: '40px', height: '40px' }}
+    />
+  </div>
+  <h1 className="header-title m-0 text-center flex-grow-1">
+    Mini Job Application Portal
+  </h1>
+  <img
+    src="/team.png"
+    alt="Header Graphic"
+    className="header-img"
+    style={{ width: '60px', height: '60px' }}
+  />
+</header>
+
+
+
+
+      <div className="container mt-4 mb-5">
+        <JobForm />
+      </div>
+    </>
   );
 }
 

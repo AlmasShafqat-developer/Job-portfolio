@@ -1,38 +1,85 @@
-.App {
+body {
+  background: linear-gradient(135deg, #f0f8ff, #dfe9f3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header bar */
+.app-header {
+  background: linear-gradient(to right, #007bff, #00bfff);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container box */
+.container {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2, h1 {
+  color: #007bff;
+}
+
+/* Labels */
+label {
+  font-weight: 500;
+}
+
+/* Gradient Button */
+.btn-primary {
+  background: linear-gradient(to right, #007bff, #00bfff);
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #0056b3, #0080ff);
+  transform: scale(1.02);
+}
+
+/* Progress Bar Custom */
+.progress-bar {
+  transition: width 0.4s ease;
+  font-weight: 600;
+}
+ 
+.app-header {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5; /* light gray or any color */
+  color: #333;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ddd;
+}
+ .app-header {
+  background-color: #e6f2ff;
+  border-bottom: 2px solid #ccc;
+}
+
+.header-title {
+  color: #003366;
+  font-weight: bold;
+  font-size: 1.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-img {
+  margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ 
+ 
+ 
